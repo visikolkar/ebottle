@@ -1,0 +1,125 @@
+<!-- <ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-calm">
+      <ion-nav-back-button class = "button-clear">
+        <i class = "icon ion-arrow-left-c"></i>
+      </ion-nav-back-button>
+      <ion-nav-title>
+          <h4 style="color:white;">EazyBottle</h4>
+      </ion-nav-title>
+      <ion-nav-buttons side="right">
+        <i class="icon ion-ios-cart"></i>
+        <i class="icon ion-ios-bell"></i>
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" class="home">
+    </ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right">
+    <ion-content>
+      <div class="list card dp-card">
+        <div class="item item-avatar dp-card">
+          <img src="img/ionic.png" alt="" id="userPic">
+          <h2 id="userName"></h2>
+          <p>Welcome to EazyBottle!</p>
+        </div>
+      </div>
+      <ion-list>
+        <ion-item class="list-item-menu" menu-close href="#/app/home">
+          Home
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/profile">
+          Profile
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/health">
+          Health
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/orders">
+          Orders
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/orders">
+          Settings
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/orders">
+          Contact Us
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+ -->
+
+ <ion-side-menus>
+      
+      <fader></fader>
+    
+      <ion-side-menu-content style="width:80%;">
+    
+      <div class="dp-card">
+        <div class="item item-avatar dp-card-user">
+          <img src="img/ionic.png" alt="" id="userPic">
+          <h2 id="userName"></h2>
+          <p style="margin-left: 50px;">Welcome to EazyBottle</p>
+          <div class="row row-info">
+            <div class="col">0 Bottles</div>
+            <div class="col">₹0 Deposit</div>
+          </div>
+        </div>
+      </div>
+      <ion-list>
+        <ion-item class="list-item-menu" menu-close href="#/app/home">
+          <i class="icon ion-android-home icon-side"></i>
+          <h2 class="side-name">Home</h2>
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/profile">
+          <i class="icon ion-android-person icon-side"></i>
+          <h2 class="side-name">Profile</h2>
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/health">
+          <i class="icon ion-ios-body icon-side"></i>
+          <h2 class="side-name">Health</h2>
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/orders">
+          <i class="icon ion-bag icon-side"></i>
+          <h2 class="side-name">Orders</h2>
+        </ion-item>
+        <ion-item class="list-item-menu" menu-close href="#/app/orders">
+          <i class="icon ion-android-settings icon-side"></i>
+          <h2 class="side-name">Settings</h2>
+        </ion-item>
+      </ion-list>
+      <div class="bar bar-footer">
+        <div class="row row-footer">
+          <div class="col" style="color:#4D4D4D">CONTACT US</div>
+          <div class="col" style="color:#4D4D4D">MORE</div>
+        </div>
+      </div>
+    <!-- </ion-content> -->
+        
+      </ion-side-menu-content>
+    
+      <ion-side-menu side="right" width="{{width()}}" can-drag-menu class="home">
+        <ion-nav-bar class="bar bar-custom">
+      <ion-nav-back-button class = "button-clear">
+        <!-- <i class = "icon ion-arrow-left-c"></i> -->
+        <i class="icon ion-chevron-left"></i>
+      </ion-nav-back-button>
+      <ion-nav-title>
+          <h4 style="color:#4D4D4D; margin-top:11px;">EazyBottle</h4>
+      </ion-nav-title>
+      <ion-nav-buttons side="left">
+        <!-- <i class="icon ion-ios-cart"></i> -->
+        <!-- <i class="icon ion-android-notifications"></i> -->
+        <i class="icon ion-truck"><img src="img/truck-icon-grey.png" width="26px" height="26px"></i>
+        <i class="icon ion-ios-bell"></i>
+        <button class="button button-icon button-clear ion-navicon button-toggle" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" >
+    </ion-nav-view>
+      
+    </ion-side-menus>

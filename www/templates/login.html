@@ -1,0 +1,32 @@
+<ion-view>
+  <!-- <ion-content> -->
+    <div class="logo">
+      <img src="./img/ionic.png" alt="">
+      <h1>EazyBottle</h1>
+    </div>
+    <div class="list list-inset user-list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Username</span>
+        <i class="icon ion-person placeholder-icon"></i>
+        <input type="text" placeholder="Username" ng-model="data.username"></input>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <i class="icon ion-key placeholder-icon"></i>
+        <input type="password" placeholder="Password" ng-model="data.password"></input>
+      </label>
+      <button class="button button-block button-calm button-signin" ng-click="login()">SIGN IN</button>
+    </div>
+
+    <div class="divider">
+      <span> or </span>
+    </div>
+
+    <div class="row social-row">
+      <a class="button" ng-click="facebookSignIn()"><i class="icon ion-social-facebook custom-icon"></i></a>
+      <a class="button"><i class="icon ion-social-googleplus custom-icon"></i></a>
+      <!--a class="button"><i class="icon ion-social-twitter custom-icon" ></i></a-->
+    </div>
+    <p class="signup">Don't have an account yet?<a href="#/signup"> Sign Up.</a></p>
+  <!-- <ion-content> -->
+</ion-view>

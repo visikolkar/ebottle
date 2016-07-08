@@ -1,0 +1,34 @@
+<ion-view>
+	<div class="logo">
+      <img src="./img/ionic.png" alt="">
+      <h1>WaterTap</h1>
+  </div>
+	<form name="authorizeForm" novalidate="" ng-submit="otpPopup(authorizeForm)" class="list signup-list">
+	  <label class="item item-input item-stacked-label" ng-class="{'has-errors': authorizeForm.fullname.$invalid, 'no-errors': authorizeForm.fullname.$valid}">
+	    <span class="input-label">Full Name</span>
+	    <i class="icon ion-person placeholder-icon custom-signup-icon"></i>
+	    <input type="text" name="fullname" placeholder="Full Name" ng-model="authorize.fullname" required>
+	  </label>
+	  <label class="item item-input item-stacked-label" ng-class="{'has-errors': authorizeForm.email.$invalid, 'no-errors': authorizeForm.email.$valid}">
+	    <span class="input-label">Email</span>
+	    <i class="icon ion-email placeholder-icon custom-signup-icon"></i>
+	    <input type="text" name="email" placeholder="Email" ng-model="authorize.email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" required>
+	  </label>
+	  <label class="item item-input item-stacked-label" ng-class="{'has-errors': authorizeForm.phoneNumber.$invalid, 'no-errors': authorizeForm.phoneNumber.$valid}">
+	    <span class="input-label">Phone Number</span>
+	    <i class="icon ion-ios-telephone placeholder-icon custom-signup-icon"></i>
+	    <input type="text" placeholder="9900645476" name="phoneNumber" ng-model="authorize.phoneNumber" ng-maxlength="10" ng-pattern="/^[0-9]{10}$/" required>
+	  </label>
+	  <label class="item item-input item-stacked-label" ng-class="{'has-errors':authorizeForm.password.$invalid, 'no-errors': authorizeForm.password.$valid}">
+	  	<span class="input-label">Password</span>
+	  	<i class="icon ion-key placeholder-icon custom-signup-icon"></i>
+	  	<input type="password" placeholder="Password" name="password" ng-model="authorize.password" required></input>
+	  </label>
+	  <!--label class="item item-input item-stacked-label">
+	  	<span class="input-label">Confirm Password</span>
+	  	<i class="icon ion-key placeholder-icon custom-signup-icon"></i>
+	  	<input type="password" placeholder="Password"></input>
+	  </label-->
+	  <button class="button button-block button-calm button-signup" type="submit">SIGN UP</button>
+	</form>
+</ion-view>

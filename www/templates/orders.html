@@ -1,0 +1,28 @@
+<ion-view>
+	<ion-nav-title>
+          <!-- <img src="img/ionic.png" width="20" height="20" alt=""> -->
+          <h4 style="color:#4D4D4D; margin-top:11px;">Your Orders</h4>
+      </ion-nav-title>
+  <ion-content>
+
+  <div class="list card order-card" ng-repeat="order in ordersData">
+
+  		<div class="item item-divider">
+	  		{{"Order ID " + order.orderID + " is " + order.orderStatus}}
+	  	</div>
+
+	  	<h6>{{order.orderDate}}</h6>
+
+	  	<div class="item item-text-wrap">
+	    	{{order.orderMessage}}
+	  	</div>
+
+	  	<div ng-if ="order.currentOrder === true" class="row">
+	  		<button class="button button-calm button-buy" ng-click="">Track</button>
+        	<button class="button button-calm button-buy" ng-click="">Cancel</button>
+	  	</div>
+
+  </div>
+
+  </ion-content>
+</ion-view>

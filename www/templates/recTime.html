@@ -1,0 +1,96 @@
+<ion-view>
+  <!-- <ion-content> -->
+      <div class="card card-delTime">
+
+        <div class="item item-divider">
+          Please set the Availability Time
+        </div>
+        <ul class="list">
+
+          <li class="item item-toggle">
+             8AM - 10AM
+             <label class="toggle toggle-calm">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+             </label>
+          </li>
+
+          <li class="item item-toggle">
+             12PM - 1:30PM
+             <label class="toggle toggle-calm">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+             </label>
+          </li>
+
+          <li class="item item-toggle">
+             6PM - 10PM
+             <label class="toggle toggle-calm">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+             </label>
+          </li>
+
+          <li class="item">
+            <p ng-click="showTimePicker()"> Set your Time {{timeFieldInModel | date:'h:mm a'}}</p>
+          </li>
+
+      </ul>
+    </div>
+
+    <div class="card">
+
+        <div class="item item-divider">
+          Please set the Recurring Event
+        </div>
+        <ul class="list">
+
+          <li class="item item-toggle">
+             Daily
+             <label class="toggle toggle-calm">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+             </label>
+          </li>
+
+          <li class="item item-toggle">
+             Every Two Days
+             <label class="toggle toggle-calm">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+             </label>
+          </li>
+
+          <li class="item item-toggle">
+             Every Three Days
+             <label class="toggle toggle-calm">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+             </label>
+          </li>
+
+          <li class="item">
+            <p ng-click=""> Set your Event</p>
+          </li>
+
+      </ul>
+    </div>
+
+    <div class="bar bar-footer bar-calm">
+      <button class="button button-clear button-cont" ng-click="contd()">Continue</button>
+    </div>
+
+  <!-- </ion-content> -->
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view>
+	<ion-nav-title>
+        <!--img src="img/ionic.png" width="20" height="20" alt="" ng-click="goBack()"
+        <a href="#" class="button-back"><i class="icon ion-arrow-left-c"></i></a> -->
+        <h4 style="color:#4D4D4D; margin-top:11px;">Profile</h4>
+    </ion-nav-title>
+  <ion-content>
+  	<div class="user">
+  		<img src="" id="userPic" alt="" class="user-dp" width="150" height="150">
+  		<h2 class="user-name" id="userName"></h2>
+    </div>
+	<div class="list">
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label">Email</span>
+	    <i class="icon ion-email custom-user-icon"></i>
+	    <input type="text" placeholder="" ng-model="user.email">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label">Phone Number</span>
+	    <i class="icon ion-ios-telephone custom-user-icon"></i>
+	    <input type="tel" placeholder="9900645476">
+	  </label>
+	  <label class="item item-input item-stacked-label">
+	    <span class="input-label">Address</span>
+	    <i class="icon ion-home custom-user-icon"></i>
+	    <input type="text" placeholder="Home Address">
+	  </label>
+	</div>
+
+  </ion-content>
+</ion-view>

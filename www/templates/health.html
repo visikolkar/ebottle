@@ -1,0 +1,71 @@
+<ion-view  has-header=false>
+	<ion-nav-title>
+          <h4 style="color:#4D4D4D; margin-top:11px;">Health</h4>
+      </ion-nav-title>
+  <ion-content>
+		<div class="health">
+			<img src="img/ionic.png" alt="" class="health-dp" width="100" height="100">
+			<h4 class="health-name"> Let's stay Hydrated..!</h4>
+			<h6 class="health-line"> Provide the below details</h6>
+		</div>
+		<div class="list health-list">
+			<label class="item item-input">
+				<span class="input-label">DOB</span>
+				<input type="date" ng-model="health.dob">
+			</label>
+			<label class="item item-input">
+		    <span class="input-label">Weight</span>
+		    <input type="text" placeholder="70kg" ng-model="health.weight" ng-change="bmicalc()">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">Height</span>
+		    <input type="number" min="1" placeholder="175cm" ng-model="health.height" ng-change="bmicalc()">
+		  </label>
+		  <label class="item item-input">
+		    <span class="input-label">BMI</span>
+				<input type="text" ng-value="bmi" ng-disabled="bmi">
+		  </label>
+			<label class="item item-input item-select">
+		    <div class="input-label">
+		      Climate
+		    </div>
+		    <select>
+		      <option selected value="16">Tropical</option>
+		      <option value="0">Rainy</option>
+		      <option value="8">Winter</option>
+		    </select>
+		  </label>
+			<label class="item item-input item-select item-activity">
+		    <div class="input-label">
+		      Activity
+		    </div>
+		    <select>
+		      <option selected value=".5">Sedementary</option>
+		      <option value=".56">Light Active</option>
+		      <option value=".62">Moderately Active</option>
+					<option value=".68">Very Active</option>
+					<option value=".75">Extremly Active</option>
+		    </select>
+		  </label>
+			<div class="row">
+				<div class="col col-35">
+					<label class="item item-input item-sleep">
+						<span class="input-label">Sleep Time</span>
+					</label>
+				</div>
+				<div class="col col-15">
+					<label class="item item-input">
+						<input type="text" placeholder="11PM" ng-model="health.from">
+					</label>
+				</div>
+				<p class="time-seperator">until</p>
+				<div class="col col-15">
+					<label class="item item-input">
+						<input type="text" placeholder="6AM" ng-model="health.to">
+					</label>
+				</div>
+			</div>
+			<button class="button button-block button-calm button-calculate" ng-click="calculate()">Calculate</button>
+		</div>
+  </ion-content>
+</ion-view>

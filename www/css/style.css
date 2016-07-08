@@ -1,0 +1,369 @@
+/* login.html css*/
+.logo{
+	margin-top:5%;
+	display: block;
+	text-align: center;
+}
+
+.logo > h1{
+	margin: 0px;
+}
+
+.user-list{
+	margin: 4%;
+}
+
+.item{
+	border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.button.button-signin{
+	margin-top: 10%;
+	font-size:	1.4em;
+}
+
+.social-row{
+	display: inline-block;
+}
+
+.placeholder-icon {
+    color: #aaa;
+    position: absolute;
+    top: 40px;
+}
+
+.list .item.item-input input {
+    padding-right: 44px;
+    margin-left: 6%;
+}
+
+a.button{
+	margin-left: 3.2%;
+	/*width: 44.66786660935597%;*/
+	width: 44%;
+}
+
+a.button:nth-child(1){
+	background-color: #3b5998;
+}
+
+.custom-icon{
+	color: white;
+}
+
+a.button:nth-child(2){
+	background-color: #D34836;
+}
+
+a.button:nth-child(3){
+	background-color: #4099FF;
+}
+
+.row.icon{
+	font-size: 96px;
+	font-color: white;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.divider{
+	height: 10px;
+    border-bottom: 3px solid #F3F5F6;
+    text-align: center;
+    width:89.33573321871194%;
+    margin: 0% 0% 3% 5%;
+}
+
+.divider > span{
+	font-size: 1em;
+	background-color: white;
+	padding: 10px;
+}
+
+.signup{
+	font-size: 1em;
+	margin: 3.4%;
+	text-align: center;
+}
+.signup > a{
+	text-decoration: none;
+}
+
+
+/* signup.html */
+
+.signup-list{
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.button.button-signup{
+	margin-top: 10%;
+	font-size:	1.4em;
+}
+
+.custom-signup-icon{
+	position: absolute;
+	left:4%;
+	top: 48.4%;
+}
+
+.popup-h{
+	margin: 0px;
+}
+
+.has-errors {
+  border-bottom: 1px solid #B83E2C;
+}
+
+.no-errors {
+  border-bottom: 2px solid green;
+}
+
+/*menu.html*/
+
+.ion-android-notifications{
+	font-size: 25px;
+	margin: 5px 5px 0px 0px;
+}
+
+.ion-ios-bell{
+	font-size: 25px;
+	margin: 5px 5px 0px 0px;
+	position: absolute;
+	right:10px;
+	color: #4D4D4D;
+}
+
+.ion-ios-cart{
+	font-size: 25px;
+	margin: 5px 10px 0px 0px;
+	position: absolute;
+	right: 40px;
+}
+
+.ion-truck{
+	margin: 4px 10px 0px 0px;
+	position: absolute;
+	right: 40px;
+	color: white;
+}
+
+.ion-arrow-left-c{
+	color: #4D4D4D;
+}
+
+.ion-chevron-left{
+	color: #4D4D4D;
+}
+
+.button.button-icon.button-toggle{
+	color: #4D4D4D;
+}
+
+fader {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  opacity: 0;
+  z-index: -1;
+}
+
+.button-toggle{
+	color: #4D4D4D;
+}
+
+.bar-custom{
+	/*border-top-left-radius: 8px;
+	border-top-right-radius: 8px;*/
+	/*background-color: aliceblue;*/
+	background-color: #7fcdff;
+	/*-webkit-box-shadow:0px 1px 1px #D3D3D3;*/
+	-webkit-box-shadow:0px 1px 1px lightgray;
+}
+
+.dp-card{
+	background-color: #7fcdff;
+	width: 100%;
+	height: 30%;
+}
+
+#userPic{
+	max-width: 100px!important;
+    max-height: 100px!important;
+    width: 100%;
+    height: 100%;
+    border-radius: 4%!important;
+    border:2px solid white;
+    margin-top: 20px;
+}
+
+#userName{
+	margin-top: 65px!important;
+	margin-left: 50px;
+}
+
+.dp-card-user{
+	background-color: #7fcdff;
+	width: 100%;
+	height: 100%;
+}
+
+.row-info{
+	position: absolute;
+	bottom: -4px;
+	left: 20%;
+	width: 60%;
+}
+.row-footer{
+	font-size: 0.84em;
+	position: absolute;
+	bottom: 0px;
+	left: 20%;
+	width: 64%;
+}
+
+.icon-side{
+	font-size: 1.4em;
+	/*margin: 0px!important;*/
+}
+
+.side-name{
+	display: inline-block;
+	/*margin: 0px 0px 10px 0px!important;*/
+	margin-left: 10px!important;
+}
+
+
+/* home.html css */
+
+/*.button-back{
+	float: left;
+}*/
+
+/*.home{
+	background-color: #D3D3D3;
+	background-color: azure;
+}*/
+
+.list-item-menu{
+	border: 0px;
+}
+
+.purchase-card{
+	margin-top: 14%;
+}
+
+.item-image{
+	border: 0px;
+}
+
+.row-btn{
+	display: inline-block;
+}
+
+.button.button-buy{
+	width: 160px;
+	float: left;
+	margin-left: 6.5px;
+	margin-top: 8px;
+	font-size: 1.4em;
+}
+
+/* Delivery time style*/
+
+.card-delTime{
+	margin-top: 15%;
+}
+
+.button.button-clear.button-cont{
+	width: inherit;
+    font-size: 1.4em;
+	color: #fff;
+}
+
+/** Profile.html CSS **/
+
+.user{
+	display: block;
+	text-align: center;
+	opacity: 1;
+	background-image: linear-gradient(to left, rgb(131, 164, 212), rgb(182, 251, 255));
+}
+
+.user-dp{
+	border-radius: 50%;
+	margin-top: 2%;
+}
+
+.user > h2 {
+	margin: 0px;
+}
+
+.custom-user-icon{
+	position: absolute;
+	top: 48.4%;
+	left: 4%;
+	float: left;
+}
+
+/* Health.html */
+.health{
+	display: block;
+	text-align: center;
+	opacity: 1;
+	background-image: linear-gradient(to left, rgb(131, 164, 212), rgb(182, 251, 255));
+}
+
+.health-dp{
+	border-radius: 50%;
+	margin-top: 2%;
+}
+
+.button.button-calculate{
+	width: 75%;
+	margin-left: 12.5%;
+	font-size:	1.4em;
+}
+
+.item-activity{
+	border-bottom: 0;
+}
+
+.item-sleep{
+	margin-left: -10%;
+	border-bottom: 0;
+}
+
+/*.item-from{
+	padding-right: 0!important;
+}*/
+
+.time-seperator{
+	margin-top: 5%;
+}
+
+/* record.html */
+.card-round-progress{
+	text-align: center;
+}
+
+.button.button-calm.button-round{
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+.custom-round-icon{
+	position: absolute;
+	top:85%;
+	left:40%;
+	font-size: 64px;
+	color: #0a9dc7;
+}

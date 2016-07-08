@@ -1,0 +1,32 @@
+{
+  "name": "EazyBottle",
+  "app_id": "",
+  "proxies": [{
+    "path": "/api/userRegister",
+    "proxyUrl": "http://eazybottle.com/EWS/app/user/userRegister"
+  },
+  {
+    "path": "/api/vendor/",
+    "proxyUrl": "http://eazybottle.com/EWS/app/vendor/"
+  },
+  {
+    "path": "/api/signup",
+    "proxyUrl": "http://eazybottle.com/EWS/app/user/signup"
+  },
+  {
+    "path": "/api/doValidOtp",
+    "proxyUrl": "http://eazybottle.com/EWS/app/user/validateOTP"
+  },
+  {
+    "path": "/api/doRegenerateOtp",
+    "proxyUrl": "http://eazybottle.com/EWS/app/user/regenerateOTP"
+  },
+  {
+    "path": "/api/signIn",
+    "proxyUrl": "http://eazybottle.com/EWS/app/user/signin"
+  },
+  {
+    "path": "/api/product",
+    "proxyUrl": "http://eazybottle.com/EWS/app/product/"
+  }]
+}
